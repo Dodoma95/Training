@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Boutons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonSeConnecter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:contentDescription="Connexion"
+                android:src="@drawable/in_noir_24_24" />
+
+            <ImageButton
+                android:id="@+id/buttonAjouter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:contentDescription="Ajouter"
+                android:src="@drawable/plus_noir_24_24" />
+
+            <ImageButton
+                android:id="@+id/buttonSupprimer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:contentDescription="Supprimer"
+                android:src="@drawable/minus_noir_24_24" />
+
+            <ImageButton
+                android:id="@+id/buttonVoir"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:contentDescription="Voir"
+                android:src="@drawable/voir_noir_24_24" />
+
+            <ImageButton
+                android:id="@+id/buttonModifier"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:contentDescription="Modifier"
+                android:src="@drawable/update_black" />
+
+            <ImageButton
+                android:id="@+id/buttonSeDeconnecter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:contentDescription="Déconnexion"
+                android:src="@drawable/out_noir_24_24" />
+
+
+
+
+        </LinearLayout>
+
+        <!-- Saisie CP -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewCp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:text="@string/cp" />
+
+            <EditText
+                android:id="@+id/editTextCp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="80"
+                android:inputType="number">
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+
+        <!-- Saisie ville -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewNomVille"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:text="@string/ville" />
+
+            <EditText
+                android:id="@+id/editTextNomVille"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="80" />
+        </LinearLayout>
+
+
+        <!-- Saisie ID Pays -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewIdPays"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:text="@string/idpays" />
+
+            <EditText
+                android:id="@+id/editTextIdPays"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="80"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+
+        <!-- Autres -->
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message" />
+
+
+    </LinearLayout>
+
+</ScrollView>

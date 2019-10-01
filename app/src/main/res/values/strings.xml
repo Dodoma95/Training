@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">sqllocal</string>
+    <string name="cp">Cp</string>
+    <string name="ville">Ville</string>
+    <string name="idpays">Code Pays</string>
+
+    <string name="message">Message</string>
+
+</resources>
